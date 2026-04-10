@@ -85,6 +85,10 @@ if menu == "Overview (핵심 지표)":
         st.dataframe(df_pop.head(50), use_container_width=True)
     elif dataset_opt == "Station Usage" and not df_station.empty:
         st.dataframe(df_station.head(50), use_container_width=True)
+    elif dataset_opt == "Caltech ACN" and not df_caltech.empty:
+        st.dataframe(df_caltech.head(50), use_container_width=True)
+    elif dataset_opt == "WA Pop" and not df_wa.empty:
+        st.dataframe(df_wa.head(50), use_container_width=True)
 
 elif menu == "Map (지리 데이터 & 인프라)":
     st.title("🗺️ 공간 인프라 지도 분석")
