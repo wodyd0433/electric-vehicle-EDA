@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-BASE_DIR = r"C:\Users\wodyd\OneDrive\PythonWorkspace\electric-vehicle-EDA"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RAW_DIR = os.path.join(BASE_DIR, "raw")
 
 # 커스텀 CSS (프리미엄 룩)
